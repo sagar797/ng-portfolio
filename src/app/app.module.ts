@@ -3,18 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './portfolio/navbar/navbar.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { PortfolioModule } from './portfolio/portfolio.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    NavbarComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  declarations: [AppComponent, PagenotfoundComponent],
+  imports: [BrowserModule, AppRoutingModule, PortfolioModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
