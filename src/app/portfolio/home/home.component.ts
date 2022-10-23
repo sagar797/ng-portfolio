@@ -7,6 +7,7 @@ import {
   Engine,
 } from 'tsparticles-engine';
 import { loadFull } from 'tsparticles';
+import { SOCIAL_HANDLE_LINKS } from '../../constants/app.constants';
 
 @Component({
   selector: 'app-home',
@@ -20,6 +21,10 @@ export class HomeComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
+    this.getParticlesOptions();
+  }
+
+  getParticlesOptions() {
     this.particlesOptions = {
       background: {
         color: {
@@ -98,7 +103,10 @@ export class HomeComponent implements OnInit {
   }
 
   async particlesInit(engine: Engine): Promise<void> {
-    // console.log(engine);
     await loadFull(engine);
+  }
+
+  redirectToSocialLink(socialHandle: string) {
+    window.open(SOCIAL_HANDLE_LINKS[socialHandle]);
   }
 }

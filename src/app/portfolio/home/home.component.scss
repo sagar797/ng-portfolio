@@ -1,0 +1,34 @@
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.social-handles {
+  margin-top: 3rem;
+
+  .icon:hover {
+    cursor: pointer;
+  }
+
+  .leetcode-icon {
+    font-size: 1.6em;
+    margin-bottom: 0.5rem;
+  }
+
+  .first-icon-margin {
+    margin-right: 2rem;
+  }
+
+  .icon-margin {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .last-icon-margin {
+    margin-left: 2rem;
+  }
+}
