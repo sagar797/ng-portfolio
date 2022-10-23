@@ -1,8 +1,8 @@
-.blue-font {
-  color: #66c8e6 !important;
-}
-
 .navbar {
+  .home-logo:hover {
+    cursor: pointer;
+  }
+
   .nav-link {
     margin: 0 20px;
   }
@@ -29,6 +29,7 @@
   .resume-button {
     border: 1px solid;
     margin-top: -8px;
+    margin-left: 2vw;
   }
 
   .resume-button:hover {
