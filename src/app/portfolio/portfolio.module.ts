@@ -9,6 +9,7 @@ import { EducationComponent } from './education/education.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { LayoutComponent } from './layout/layout.component';
 import { NgParticlesModule } from 'ng-particles';
+import { NgxTypedJsModule } from 'ngx-typed-js';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,11 @@ import { NgParticlesModule } from 'ng-particles';
     EducationComponent,
     LayoutComponent,
   ],
-  imports: [CommonModule, PortfolioRoutingModule, NgParticlesModule],
+  imports: [
+    CommonModule,
+    PortfolioRoutingModule,
+    NgParticlesModule,
+    NgxTypedJsModule,
+  ],
 })
 export class PortfolioModule {}

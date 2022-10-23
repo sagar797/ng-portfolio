@@ -1,5 +1,18 @@
 <div class="container blue-color">
   <ng-particles [id]="id" [options]="particlesOptions" [particlesInit]="particlesInit"></ng-particles>
-  <h5>Hi, my name is</h5>
-  <h2>Sagar Gupta</h2>
+
+  <div class="introduction">
+    <h5>Hi, my name is</h5>
+    <h2 class="voilet-color bold">Sagar Gupta</h2>
+    <ngx-typed-js class="voilet-color bold"
+      [strings]="['Backend Development.', 'Frontend Development.', 'Problem Solving.','Learning New Technologies.','Gaming.']"
+      [loop]="true" [shuffle]="true" [typeSpeed]="75">
+      <h2>I am into <span class="typing"></span></h2>
+    </ngx-typed-js>
+  </div>
+
+  <div class="social-handles">
+    <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+    <!-- <i class="cib-leetcode"></i> -->
+  </div>
 </div>

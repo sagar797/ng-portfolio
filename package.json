@@ -22,6 +22,7 @@
     "bootstrap": "^5.2.2",
     "font-awesome": "^4.7.0",
     "ng-particles": "^3.3.3",
+    "ngx-typed-js": "^2.1.1",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "tsparticles": "^2.3.4",
