@@ -4,6 +4,7 @@ import { AboutComponent } from './about/about.component';
 import { EducationComponent } from './education/education.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { HomeComponent } from './home/home.component';
+import { LayoutComponent } from './layout/layout.component';
 import { ProjectsComponent } from './projects/projects.component';
 
 const routes: Routes = [
@@ -14,8 +15,12 @@ const routes: Routes = [
   },
   {
     path: 'home',
-    component: HomeComponent,
+    component: LayoutComponent,
     children: [
+      {
+        path: '',
+        component: HomeComponent,
+      },
       {
         path: 'about',
         component: AboutComponent,
