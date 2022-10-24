@@ -10,6 +10,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { LayoutComponent } from './layout/layout.component';
 import { NgParticlesModule } from 'ng-particles';
 import { NgxTypedJsModule } from 'ngx-typed-js';
+import { SkillsComponent } from './skills/skills.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { NgxTypedJsModule } from 'ngx-typed-js';
     ProjectsComponent,
     EducationComponent,
     LayoutComponent,
+    SkillsComponent,
   ],
   imports: [
     CommonModule,
