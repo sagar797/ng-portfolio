@@ -7,25 +7,6 @@
     margin: 0 20px;
   }
 
-  .cool-link {
-    display: inline-block;
-    color: #66c8e6;
-    text-decoration: none;
-  }
-
-  .cool-link::after {
-    content: "";
-    display: block;
-    width: 0;
-    height: 2px;
-    background: #66c8e6;
-    transition: width 0.3s;
-  }
-
-  .cool-link:hover::after {
-    width: 100%;
-  }
-
   .resume-button {
     border: 1px solid;
     margin-top: -8px;
@@ -33,7 +14,6 @@
   }
 
   .resume-button:hover {
-    // color: white !important;
     background-color: #153140;
   }
 }

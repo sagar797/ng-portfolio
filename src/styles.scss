@@ -20,3 +20,22 @@ body {
 .bold {
   font-weight: bold;
 }
+
+.cool-link {
+  display: inline-block;
+  color: #66c8e6;
+  text-decoration: none;
+}
+
+.cool-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #66c8e6;
+  transition: width 0.3s;
+}
+
+.cool-link:hover::after {
+  width: 100%;
+}
