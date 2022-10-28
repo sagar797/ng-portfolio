@@ -56,10 +56,10 @@ export class HomeComponent implements OnInit {
       },
       particles: {
         color: {
-          value: '#66c8e6',
+          value: '#ffffff',
         },
         links: {
-          color: '#66c8e6',
+          color: '#ffffff',
           distance: 150,
           enable: true,
           opacity: 0.5,
@@ -83,17 +83,17 @@ export class HomeComponent implements OnInit {
             enable: true,
             area: 1000,
           },
-          value: 125,
+          value: 100,
         },
         opacity: {
           value: 0.5,
         },
         shape: {
-          type: 'noice',
+          type: 'circle',
           // To Know More Shapes(SAGAR) : https://github.com/matteobruni/tsparticles/tree/main/shapes
         },
         size: {
-          value: { min: 1, max: 2 },
+          value: { min: 1, max: 1.5 },
         },
       },
       detectRetina: true,
