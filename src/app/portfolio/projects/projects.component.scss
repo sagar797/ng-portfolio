@@ -1,0 +1,45 @@
+svg {
+  width: 100%;
+}
+.filled-heading {
+  text-transform: uppercase;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 5em;
+  line-height: 0.9;
+}
+
+#background path {
+  animation: pulse 4s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
+  transform-origin: 50% 50%;
+  transform-box: fill-box;
+}
+#textClip text {
+  display: none;
+}
+#textClip text:nth-of-type(n + 1):nth-of-type(-n + 3) {
+  display: inline;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(0) rotate(33deg);
+  }
+  35%,
+  65% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+.noice {
+  // z-index: -1;
+  position: absolute;
+  left: 60%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  vertical-align: middle;
+  line-height: 90px;
+  width: 80vw;
+}
