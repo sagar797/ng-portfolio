@@ -1,14 +1,14 @@
-.container {
+.profile {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 55%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  text-align: center;
+  display: flex;
 }
 
 .social-handles {
-  margin-top: 3rem;
+  margin-top: 5rem;
 
   .icon:hover {
     cursor: pointer;

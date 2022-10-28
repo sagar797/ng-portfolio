@@ -31,7 +31,7 @@ body {
 
 .cool-link {
   display: inline-block;
-  color: #66c8e6;
+  color: #cf1c1a;
   text-decoration: none;
 }
 
@@ -40,10 +40,14 @@ body {
   display: block;
   width: 0;
   height: 2px;
-  background: #66c8e6;
+  background: #cf1c1a;
   transition: width 0.3s;
 }
 
 .cool-link:hover::after {
   width: 100%;
+}
+
+.fs-5 {
+  font-size: 5vh;
 }
