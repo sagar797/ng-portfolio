@@ -222,6 +222,7 @@ html {
     margin-top: 5vh;
     display: flex;
     flex-flow: wrap;
+    animation: transitionIn 1.5s;
 
     .skill {
       margin: 1.5vh auto;

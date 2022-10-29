@@ -17,6 +17,10 @@
   .body {
     margin-top: 5vh;
     display: flex;
+
+    .about {
+      animation: transitionIn 1.5s;
+    }
   }
 
   .image-container {
