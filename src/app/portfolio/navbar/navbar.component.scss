@@ -15,12 +15,13 @@
 
   .resume-button {
     font-weight: bold;
-    border: 2px solid;
+    border: 2px solid #cfd6ed;
     margin-top: -8px;
     margin-left: 2vw;
+    color: #cfd6ed !important;
   }
 
   .resume-button:hover {
-    background-color: #401e15;
+    background-color: #902322;
   }
 }
