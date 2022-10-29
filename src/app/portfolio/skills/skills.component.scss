@@ -17,6 +17,7 @@ html {
 }
 
 .orbit {
+  // height: 75vh;
   // background: darken(#1a237e, 20%);
   // float: left;
   // width: 100%;
@@ -36,13 +37,13 @@ html {
   }
 
   .orbit-wrap {
-    height: 40em;
+    // height: 40em;
     list-style: none;
     font-size: 1.3em;
 
     > li {
       position: absolute;
-      left: 50%;
+      left: 75vw;
       top: 50%;
       transform: translate(-50%, -50%);
 
@@ -100,7 +101,7 @@ html {
   }
 
   %ring {
-    border: solid 1px #cf1c1a;
+    border: solid 2px #cf1c1a;
     position: relative;
     padding: 0;
     border-radius: 50%;
@@ -198,4 +199,38 @@ html {
       color: nth($icon, 3);
     }
   }
+}
+
+// Skills CSS starts here
+.container {
+  margin-top: 5vh;
+
+  .heading {
+    text-align: left;
+  }
+
+  .heading::after {
+    display: inline-block;
+    content: "";
+    border-top: 3px solid #cf1c1a;
+    width: 10vw;
+    margin: 0 1rem;
+    transform: translateY(-0.5rem);
+  }
+
+  .body {
+    margin-top: 5vh;
+
+    .skill {
+      margin: 2vh auto;
+    }
+  }
+}
+
+.progress {
+  --bs-progress-height: 0.5vh;
+}
+
+.bg-danger {
+  background-color: #cf1c1a !important;
 }

@@ -1,5 +1,15 @@
-<div class="container red-color">
-  <p>skills works!</p>
+<div class="col-md-12 container">
+  <h4 class="col-md-12 heading voilet-color"><span class="red-color bold">02.</span> Skills</h4>
+  <div class="col-md-12 voilet-color body">
+    <div class="col-md-12 skill" *ngFor="let skill of skills">
+      <h6 class="col-md-12">{{skill.name}} <i [class]="skill.class" aria-hidden="true"></i></h6>
+      <div class="col-md-6 progress">
+        <div class="progress-bar bg-danger" role="progressbar" aria-label="Danger example" aria-valuenow="100"
+          aria-valuemin="0" aria-valuemax="100" [style.width.%]="skill.progress">
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <div class="orbit">
