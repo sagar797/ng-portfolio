@@ -10,6 +10,7 @@ import { LayoutComponent } from './layout/layout.component';
 import { NgParticlesModule } from 'ng-particles';
 import { NgxTypedJsModule } from 'ngx-typed-js';
 import { SkillsComponent } from './skills/skills.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { SkillsComponent } from './skills/skills.component';
     PortfolioRoutingModule,
     NgParticlesModule,
     NgxTypedJsModule,
+    FontAwesomeModule,
   ],
 })
 export class PortfolioModule {}
