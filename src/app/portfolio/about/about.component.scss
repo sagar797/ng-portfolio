@@ -3,6 +3,7 @@
 
   .heading {
     text-align: left;
+    animation: transitionIn 1.5s;
   }
 
   .heading::after {
