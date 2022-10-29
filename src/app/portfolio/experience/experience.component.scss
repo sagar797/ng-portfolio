@@ -1,5 +1,6 @@
 .container {
-  margin-top: 5vh;
+  margin-top: 3vh;
+  animation: transitionIn 1.5s;
 
   .heading {
     text-align: left;
@@ -12,5 +13,19 @@
     width: 10vw;
     margin: 0 1rem;
     transform: translateY(-0.5rem);
+  }
+
+  .experience {
+    margin-top: 3vh;
+
+    .card {
+      background-color: #272727;
+      margin: 4vh 0;
+    }
+
+    .card:hover {
+      transform: scale(1.04);
+      transition: 0.5s;
+    }
   }
 }
