@@ -65,6 +65,11 @@ body {
   text-align: center;
 }
 
+.opening-tag,
+.closing-tag {
+  margin: 2vh 0;
+}
+
 @keyframes transitionIn {
   from {
     opacity: 0;
