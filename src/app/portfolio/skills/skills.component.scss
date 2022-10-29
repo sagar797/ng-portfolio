@@ -203,7 +203,7 @@ html {
 
 // Skills CSS starts here
 .container {
-  margin-top: 5vh;
+  margin-top: 3vh;
   animation: transitionIn 1.5s;
 
   .heading {
@@ -220,9 +220,14 @@ html {
   }
 
   .body {
-    margin-top: 5vh;
+    margin-top: 3vh;
     display: flex;
     flex-flow: wrap;
+
+    .opening-tag,
+    .closing-tag {
+      margin: 1vh 0;
+    }
 
     .skill {
       margin: 1.5vh auto;

@@ -1,6 +1,7 @@
 <div class="col-md-12 container">
   <h4 class="col-md-12 heading voilet-color"><span class="red-color bold">02.</span> Skills</h4>
   <div class="col-md-8 voilet-color body">
+    <h5 class="col-md-12 opening-tag red-color">&lt;skills&gt;</h5>
     <div class="col-md-6 skill" *ngFor="let skill of skills">
       <h5 class="col-md-12">{{skill.name}}
         <i *ngIf="!skill.image" [class]="skill.class" aria-hidden="true"></i>
@@ -13,6 +14,7 @@
         </div>
       </div>
     </div>
+    <h5 class="col-md-12 closing-tag red-color">&lt;/skills&gt;</h5>
   </div>
 </div>
 

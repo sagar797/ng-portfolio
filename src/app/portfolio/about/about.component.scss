@@ -1,5 +1,5 @@
 .container {
-  margin-top: 5vh;
+  margin-top: 3vh;
 
   .heading {
     text-align: left;
@@ -16,11 +16,16 @@
   }
 
   .body {
-    margin-top: 5vh;
+    margin-top: 3vh;
     display: flex;
 
     .about {
       animation: transitionIn 1.5s;
+
+      .opening-tag,
+      .closing-tag {
+        margin: 1vh 0;
+      }
     }
   }
 
