@@ -234,3 +234,21 @@ html {
 .bg-danger {
   background-color: #cf1c1a !important;
 }
+
+.fa-lambda::before {
+  content: "\4c";
+}
+
+.image {
+  .lambda {
+    height: 1.2rem;
+  }
+
+  .dynamo {
+    height: 1.5rem;
+  }
+
+  .aws {
+    height: 2rem;
+  }
+}
