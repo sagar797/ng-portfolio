@@ -220,9 +220,91 @@ html {
 
   .body {
     margin-top: 5vh;
+    display: flex;
+    flex-flow: wrap;
 
     .skill {
-      margin: 2vh auto;
+      margin: 1.5vh auto;
+
+      .image {
+        .lambda {
+          height: 1.2rem;
+          margin-bottom: 5px;
+        }
+
+        .dynamo {
+          height: 1.5rem;
+          margin-bottom: 5px;
+        }
+
+        .aws {
+          height: 2rem;
+        }
+
+        .flask {
+          height: 2rem;
+        }
+
+        .elastic-search {
+          height: 1.7rem;
+        }
+
+        .typescript {
+          height: 1.4rem;
+        }
+
+        .angular {
+          height: 1.2rem;
+        }
+
+        .javascript {
+          height: 1.6rem;
+          margin-bottom: 5px;
+        }
+
+        .python {
+          height: 1.2rem;
+        }
+
+        .html {
+          height: 1.4rem;
+          margin-bottom: 5px;
+        }
+
+        .css {
+          height: 1.5rem;
+          margin-bottom: 5px;
+        }
+
+        .redis {
+          height: 1.5rem;
+        }
+
+        .git {
+          height: 1.5rem;
+          margin-bottom: 5px;
+        }
+
+        .java {
+          height: 1.6rem;
+          margin-bottom: 5px;
+        }
+
+        .docker {
+          height: 1.5rem;
+          margin-bottom: 5px;
+        }
+
+        .kubernetes {
+          height: 1.6rem;
+          margin-bottom: 5px;
+        }
+
+        .s3 {
+          height: 1.7rem;
+          margin-bottom: 5px;
+        }
+      }
     }
   }
 }
@@ -237,18 +319,4 @@ html {
 
 .fa-lambda::before {
   content: "\4c";
-}
-
-.image {
-  .lambda {
-    height: 1.2rem;
-  }
-
-  .dynamo {
-    height: 1.5rem;
-  }
-
-  .aws {
-    height: 2rem;
-  }
 }
