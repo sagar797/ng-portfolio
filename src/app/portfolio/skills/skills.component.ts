@@ -5,141 +5,167 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./skills.component.scss'],
 })
 export class SkillsComponent implements OnInit {
-  skills = [];
+  frontendSkills = [];
+  backendSkills = [];
+  otherSkills = [];
 
   constructor() {}
 
   ngOnInit(): void {
-    this.getSkills();
+    this.getFrontendSkills();
+    this.getBackendSkills();
+    this.getOtherSkills();
   }
 
-  getSkills() {
-    this.skills = [
-      {
-        name: 'DSA',
-        progress: 80,
-        class: 'fas fa-code',
-        image: false,
-      },
-      {
-        name: 'Angular',
-        progress: 80,
-        class: 'angular',
-        path: '../../../assets/images/skills/angular.png',
-        image: true,
-      },
+  getFrontendSkills() {
+    this.frontendSkills = [
       {
         name: 'HTML',
-        progress: 90,
         class: 'html',
         path: '../../../assets/images/skills/html.png',
         image: true,
       },
       {
         name: 'CSS',
-        progress: 90,
         class: 'css',
         path: '../../../assets/images/skills/css.png',
         image: true,
       },
       {
+        name: 'Sass',
+        class: 'sass',
+        path: '../../../assets/images/skills/sass.png',
+        image: true,
+      },
+      {
+        name: 'Bootstrap',
+        class: 'bootstrap',
+        path: '../../../assets/images/skills/bootstrap.png',
+        image: true,
+      },
+      {
         name: 'Javascript',
-        progress: 80,
         class: 'javascript',
         path: '../../../assets/images/skills/javascript.png',
         image: true,
       },
       {
         name: 'Typescript',
-        progress: 75,
         class: 'typescript',
         path: '../../../assets/images/skills/typescript.png',
         image: true,
       },
       {
+        name: 'Angular',
+        class: 'angular',
+        path: '../../../assets/images/skills/angular.png',
+        image: true,
+      },
+    ];
+  }
+
+  getBackendSkills() {
+    this.backendSkills = [
+      {
         name: 'Python',
-        progress: 80,
         class: 'python',
         path: '../../../assets/images/skills/python.png',
         image: true,
       },
       {
         name: 'Flask',
-        progress: 75,
         class: 'flask',
         path: '../../../assets/images/skills/flask.png',
         image: true,
       },
       {
-        name: 'Java',
-        progress: 75,
-        class: 'java',
-        path: '../../../assets/images/skills/java.png',
-        image: true,
-      },
-      {
-        name: 'Git',
-        progress: 80,
-        class: 'git',
-        path: '../../../assets/images/skills/git.png',
-        image: true,
-      },
-      {
         name: 'AWS',
-        progress: 60,
         class: 'aws',
         path: '../../../assets/images/skills/aws.png',
         image: true,
       },
       {
         name: 'Redis',
-        progress: 60,
         class: 'redis',
         path: '../../../assets/images/skills/redis.png',
         image: true,
       },
       {
-        name: 'AWS Dynamo DB',
-        progress: 60,
+        name: 'Dynamo DB',
         class: 'dynamo',
         path: '../../../assets/images/skills/dynamo.png',
         image: true,
       },
       {
-        name: 'AWS Lambda',
-        progress: 60,
+        name: 'Lambda',
         class: 'lambda',
         path: '../../../assets/images/skills/lambda.png',
         image: true,
       },
       {
-        name: 'AWS Elastic Search',
-        progress: 60,
+        name: 'Elastic Search',
         class: 'elastic-search',
         path: '../../../assets/images/skills/elastic.png',
         image: true,
       },
       {
-        name: 'AWS S3',
-        progress: 60,
+        name: 'S3',
         class: 's3',
         path: '../../../assets/images/skills/s3.png',
         image: true,
       },
       // {
       //   name: 'Docker',
-      //   progress: 50,
       //   class: 'docker',
       //   path: '../../../assets/images/skills/docker.png',
       //   image: true,
       // },
       // {
       //   name: 'Kubernetes',
-      //   progress: 50,
       //   class: 'kubernetes',
       //   path: '../../../assets/images/skills/kubernetes.png',
       //   image: true,
       // },
+    ];
+  }
+
+  getOtherSkills() {
+    this.otherSkills = [
+      {
+        name: 'Java',
+        class: 'java',
+        path: '../../../assets/images/skills/java.png',
+        image: true,
+      },
+      {
+        name: 'DSA',
+        class: 'fas fa-code',
+        image: false,
+      },
+      {
+        name: 'Command Line',
+        class: 'commandline',
+        path: '../../../assets/images/skills/commandline.png',
+        image: true,
+      },
+      {
+        name: 'Vs Code',
+        class: 'vscode',
+        path: '../../../assets/images/skills/vscode.png',
+        image: true,
+      },
+      {
+        name: 'Git',
+        class: 'git',
+        path: '../../../assets/images/skills/git.png',
+        image: true,
+      },
+      {
+        name: 'Github',
+        class: 'github',
+        path: '../../../assets/images/skills/github.png',
+        image: true,
+      },
     ];
   }
 }
