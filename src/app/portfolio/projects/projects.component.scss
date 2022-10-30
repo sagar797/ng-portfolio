@@ -16,8 +16,49 @@
   }
 
   .projects {
+    margin-top: 3vh;
+
     .project {
       display: flex;
+
+      .details {
+        .name {
+          margin-top: 5vh;
+        }
+
+        .description {
+          border: 1px solid;
+          border-radius: 5px;
+          padding: 5%;
+          background-color: #272727;
+        }
+
+        .tech-used {
+          margin-top: 2vh;
+
+          .tech {
+            display: inline-block;
+            margin: 0 0.5vw;
+
+            .badge {
+              background-color: #902322 !important;
+            }
+          }
+        }
+      }
+
+      .links {
+        display: flex;
+        margin-top: 2vh;
+
+        :hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .project:nth-child(even) {
+      flex-direction: row-reverse;
     }
   }
 }

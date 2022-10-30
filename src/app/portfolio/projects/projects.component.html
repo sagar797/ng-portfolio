@@ -2,35 +2,27 @@
   <h4 class="col-md-12 heading voilet-color"><span class="red-color bold">04.</span> Projects</h4>
   <div class="col-md-12 projects">
     <h5 class="col-md-12 opening-tag red-color">&lt;projects&gt;</h5>
-    <div class="col-md-12 project">
-      <div class="col-md-4">
-        <img src="../../../assets/images/projects/portfolio-laptop.png" alt="portfolio">
+    <div class="col-md-12 project" *ngFor="let project of projects">
+      <div class="col-md-5">
+        <img src={{project.image}} alt="{{project.name}}" class="col-md-12 voilet-color">
       </div>
-      <div class="col-md-8">NOICE</div>
-    </div>
-    <div class="col-md-12 project">
-      <div class="col-md-4">
-        <img src="../../../assets/images/projects/portfolio-laptop.png" alt="portfolio">
+      <div class="col-md-7 voilet-color details">
+        <h5 class="col-md-12 bold name">{{project.name}}</h5>
+        <h6 class="col-md-12 description">{{project.description}}</h6>
+        <h6 class="col-md-12 tech-used">Tech Used:
+          <!-- <button type="button" class="btn btn-outline-danger" *ngFor="let tech of project.tech_used">{{tech}}</button> -->
+          <h5 *ngFor="let tech of project.tech_used" class="tech"><span class="badge text-bg-danger">{{tech}}</span>
+          </h5>
+        </h6>
+        <div class="col-md-12 links">
+          <div class="col-md-1">
+            <i (click)="redirectToLink(project.githubLink)" class="fab fa-github fa-lg"></i>
+          </div>
+          <div class="col-md-1">
+            <i (click)="redirectToLink(project.hostedLink)" class="fas fa-external-link-alt fa-lg"></i>
+          </div>
+        </div>
       </div>
-      <div class="col-md-8">NOICE</div>
-    </div>
-    <div class="col-md-12 project">
-      <div class="col-md-4">
-        <img src="../../../assets/images/projects/portfolio-laptop.png" alt="portfolio">
-      </div>
-      <div class="col-md-8">NOICE</div>
-    </div>
-    <div class="col-md-12 project">
-      <div class="col-md-4">
-        <img src="../../../assets/images/projects/portfolio-laptop.png" alt="portfolio">
-      </div>
-      <div class="col-md-8">NOICE</div>
-    </div>
-    <div class="col-md-12 project">
-      <div class="col-md-4">
-        <img src="../../../assets/images/projects/portfolio-laptop.png" alt="portfolio">
-      </div>
-      <div class="col-md-8">NOICE</div>
     </div>
     <h5 class="col-md-12 closing-tag red-color">&lt;/projects&gt;</h5>
   </div>
