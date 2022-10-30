@@ -21,6 +21,64 @@
 
     .about {
       animation: transitionIn 2.5s;
+
+      .education {
+        .heading {
+          margin: 2.5vh 0;
+        }
+
+        .bpit,
+        .twelfth {
+          background-color: #272727;
+          border: 1px solid;
+          border-radius: 10px;
+          padding-left: 2vh;
+          padding-top: 1vh;
+          margin: 2vh 0;
+        }
+      }
+
+      .contact {
+        .heading {
+          margin: 2.5vh 0;
+        }
+
+        .first-img,
+        .img,
+        .last-img {
+          height: 2rem;
+        }
+
+        .first-img {
+          margin-right: 0.8rem;
+        }
+
+        .first-img:hover {
+          cursor: pointer;
+          transform: scale(1.5);
+          transition: 0.25s;
+        }
+
+        .img {
+          margin: 0 0.8rem;
+        }
+
+        .img:hover {
+          cursor: pointer;
+          transform: scale(1.5);
+          transition: 0.25s;
+        }
+
+        .last-img {
+          margin-left: 0.8rem;
+        }
+
+        .last-img:hover {
+          cursor: pointer;
+          transform: scale(1.5);
+          transition: 0.25s;
+        }
+      }
     }
   }
 
