@@ -4,6 +4,7 @@ export const SOCIAL_HANDLE_LINKS: any = {
   github: 'https://github.com/sagar797',
   portfolio: 'https://sagarportfolio.herokuapp.com/',
   twitter: 'https://twitter.com/sagar797',
+  resume: 'https://google.com',
 };
 
 export const importantLinksNotRelatedToDevButUsedInThisProject: any = {

@@ -5,25 +5,41 @@
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   display: flex;
-}
+  .social-handles {
+    margin-top: 5rem;
 
-.social-handles {
-  margin-top: 5rem;
+    .icon {
+      text-align: center;
+    }
 
-  .icon {
-    text-align: center;
+    .icon:hover {
+      cursor: pointer;
+      color: #cfd6ed;
+      transform: scale(1.5);
+      transition: 0.25s;
+    }
+
+    .leetcode-icon {
+      height: 2em;
+      margin-bottom: 0.6rem;
+      columns: #cf1c1a;
+    }
   }
 
-  .icon:hover {
-    cursor: pointer;
-    color: #cfd6ed;
-    transform: scale(1.5);
-    transition: 0.25s;
-  }
+  .resume {
+    margin-top: 5vh;
 
-  .leetcode-icon {
-    height: 2em;
-    margin-bottom: 0.6rem;
-    columns: red;
+    .resume-button {
+      padding: 1rem;
+      font-weight: bold;
+      font-size: medium;
+      border: 2px solid #cfd6ed;
+      margin-top: -8px;
+      color: #cfd6ed !important;
+    }
+
+    .resume-button:hover {
+      background-color: #a91714;
+    }
   }
 }
