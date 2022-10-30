@@ -10,26 +10,20 @@
 .social-handles {
   margin-top: 5rem;
 
+  .icon {
+    text-align: center;
+  }
+
   .icon:hover {
     cursor: pointer;
     color: #cfd6ed;
+    transform: scale(1.5);
+    transition: 0.25s;
   }
 
   .leetcode-icon {
-    font-size: 1.6em;
-    margin-bottom: 0.5rem;
-  }
-
-  .first-icon-margin {
-    margin-right: 2rem;
-  }
-
-  .icon-margin {
-    margin-left: 2rem;
-    margin-right: 2rem;
-  }
-
-  .last-icon-margin {
-    margin-left: 2rem;
+    height: 2em;
+    margin-bottom: 0.6rem;
+    columns: red;
   }
 }
