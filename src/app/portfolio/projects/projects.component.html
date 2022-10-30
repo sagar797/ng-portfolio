@@ -10,16 +10,20 @@
         <h4 class="col-md-12 bold name text-center">{{project.name}}</h4>
         <h6 class="col-md-12 description">{{project.description}}</h6>
         <h6 class="col-md-12 tech-used">Tech Used:
-          <!-- <button type="button" class="btn btn-outline-danger" *ngFor="let tech of project.tech_used">{{tech}}</button> -->
-          <h5 *ngFor="let tech of project.tech_used" class="tech"><span class="badge text-bg-danger">{{tech}}</span>
-          </h5>
+          <span *ngFor="let tech of project.tech_used">
+            <img class="img" src="{{tech.img_link}}" alt="{{tech.name}}">
+          </span>
         </h6>
         <div class="col-md-12 links">
-          <div class="col-md-1">
-            <i (click)="redirectToLink(project.githubLink)" class="fab fa-github fa-2x"></i>
+          <div class="col-md-4">
+            <button (click)="redirectToLink(project.hostedLink)" type="button" class="btn btn-danger hosted-link">
+              View It Here <i class="fas fa-external-link-alt"></i>
+            </button>
           </div>
-          <div class="col-md-1">
-            <i (click)="redirectToLink(project.hostedLink)" class="fas fa-external-link-alt fa-2x"></i>
+          <div class="col-md-4">
+            <button (click)="redirectToLink(project.githubLink)" type="button" class="btn btn-danger github-link">
+              View Github Repo <i class="fas fa-external-link-alt"></i>
+            </button>
           </div>
         </div>
       </div>

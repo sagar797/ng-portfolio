@@ -17,55 +17,181 @@ export class ProjectsComponent implements OnInit {
   getProjectList() {
     this.projects = [
       {
-        name: 'Master ToDo List',
+        name: 'Master TODO List',
         description:
           'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus dolor ullam consectetur? Blanditiis quos voluptatem quas sequi deleniti, amet, nam voluptatibus, impedit alias soluta similique atque maiores sunt delectus a.',
-        tech_used: ['Vs Code', 'Sublime Text', 'Atom', 'iTerm2', 'Hyper'],
+        tech_used: [
+          {
+            name: 'Vs Code',
+            img_link: '../../../assets/images/skills/vscode.png',
+          },
+          {
+            name: 'Sublime Text',
+            img_link: '../../../assets/images/skills/aws.png',
+          },
+          {
+            name: 'Vs Code',
+            img_link: '../../../assets/images/skills/angular.png',
+          },
+          {
+            name: 'Vs Code',
+            img_link: '../../../assets/images/skills/docker.png',
+          },
+          {
+            name: 'Vs Code',
+            img_link: '../../../assets/images/skills/elastic.png',
+          },
+        ],
         image: '../../../assets/images/projects/todo-laptop.png',
         githubLink: 'https://github.com/sagar797/flask-todo',
         hostedLink: 'http://sagar-todo-app.herokuapp.com/',
       },
       {
-        name: 'Master ToDo List',
+        name: 'Master TODO List',
         description:
           'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus dolor ullam consectetur? Blanditiis quos voluptatem quas sequi deleniti, amet, nam voluptatibus, impedit alias soluta similique atque maiores sunt delectus a.',
-        tech_used: ['Vs Code', 'Sublime Text', 'Atom', 'iTerm2', 'Hyper'],
+        tech_used: [
+          {
+            name: 'Vs Code',
+            img_link: '../../../assets/images/skills/vscode.png',
+          },
+          {
+            name: 'Sublime Text',
+            img_link: '../../../assets/images/skills/aws.png',
+          },
+          {
+            name: 'Vs Code',
+            img_link: '../../../assets/images/skills/angular.png',
+          },
+          {
+            name: 'Vs Code',
+            img_link: '../../../assets/images/skills/docker.png',
+          },
+          {
+            name: 'Vs Code',
+            img_link: '../../../assets/images/skills/elastic.png',
+          },
+        ],
         image: '../../../assets/images/projects/todo-laptop.png',
         githubLink: 'https://github.com/sagar797/flask-todo',
         hostedLink: 'http://sagar-todo-app.herokuapp.com/',
       },
       {
-        name: 'Master ToDo List',
+        name: 'Master TODO List',
         description:
           'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus dolor ullam consectetur? Blanditiis quos voluptatem quas sequi deleniti, amet, nam voluptatibus, impedit alias soluta similique atque maiores sunt delectus a.',
-        tech_used: ['Vs Code', 'Sublime Text', 'Atom', 'iTerm2', 'Hyper'],
+        tech_used: [
+          {
+            name: 'Vs Code',
+            img_link: '../../../assets/images/skills/vscode.png',
+          },
+          {
+            name: 'Sublime Text',
+            img_link: '../../../assets/images/skills/aws.png',
+          },
+          {
+            name: 'Vs Code',
+            img_link: '../../../assets/images/skills/angular.png',
+          },
+          {
+            name: 'Vs Code',
+            img_link: '../../../assets/images/skills/docker.png',
+          },
+          {
+            name: 'Vs Code',
+            img_link: '../../../assets/images/skills/elastic.png',
+          },
+        ],
         image: '../../../assets/images/projects/todo-laptop.png',
         githubLink: 'https://github.com/sagar797/flask-todo',
         hostedLink: 'http://sagar-todo-app.herokuapp.com/',
       },
       {
-        name: 'Master ToDo List',
+        name: 'Master TODO List',
         description:
           'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus dolor ullam consectetur? Blanditiis quos voluptatem quas sequi deleniti, amet, nam voluptatibus, impedit alias soluta similique atque maiores sunt delectus a.',
-        tech_used: ['Vs Code', 'Sublime Text', 'Atom', 'iTerm2', 'Hyper'],
+        tech_used: [
+          {
+            name: 'Vs Code',
+            img_link: '../../../assets/images/skills/vscode.png',
+          },
+          {
+            name: 'Sublime Text',
+            img_link: '../../../assets/images/skills/aws.png',
+          },
+          {
+            name: 'Vs Code',
+            img_link: '../../../assets/images/skills/angular.png',
+          },
+          {
+            name: 'Vs Code',
+            img_link: '../../../assets/images/skills/docker.png',
+          },
+          {
+            name: 'Vs Code',
+            img_link: '../../../assets/images/skills/elastic.png',
+          },
+        ],
         image: '../../../assets/images/projects/todo-laptop.png',
         githubLink: 'https://github.com/sagar797/flask-todo',
         hostedLink: 'http://sagar-todo-app.herokuapp.com/',
       },
       {
-        name: 'Master ToDo List',
+        name: 'Master TODO List',
         description:
           'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus dolor ullam consectetur? Blanditiis quos voluptatem quas sequi deleniti, amet, nam voluptatibus, impedit alias soluta similique atque maiores sunt delectus a.',
-        tech_used: ['Vs Code', 'Sublime Text', 'Atom', 'iTerm2', 'Hyper'],
+        tech_used: [
+          {
+            name: 'Vs Code',
+            img_link: '../../../assets/images/skills/vscode.png',
+          },
+          {
+            name: 'Sublime Text',
+            img_link: '../../../assets/images/skills/aws.png',
+          },
+          {
+            name: 'Vs Code',
+            img_link: '../../../assets/images/skills/angular.png',
+          },
+          {
+            name: 'Vs Code',
+            img_link: '../../../assets/images/skills/docker.png',
+          },
+          {
+            name: 'Vs Code',
+            img_link: '../../../assets/images/skills/elastic.png',
+          },
+        ],
         image: '../../../assets/images/projects/todo-laptop.png',
         githubLink: 'https://github.com/sagar797/flask-todo',
         hostedLink: 'http://sagar-todo-app.herokuapp.com/',
       },
       {
-        name: 'Master ToDo List',
+        name: 'Master TODO List',
         description:
           'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus dolor ullam consectetur? Blanditiis quos voluptatem quas sequi deleniti, amet, nam voluptatibus, impedit alias soluta similique atque maiores sunt delectus a.',
-        tech_used: ['Vs Code', 'Sublime Text', 'Atom', 'iTerm2', 'Hyper'],
+        tech_used: [
+          {
+            name: 'Vs Code',
+            img_link: '../../../assets/images/skills/vscode.png',
+          },
+          {
+            name: 'Sublime Text',
+            img_link: '../../../assets/images/skills/aws.png',
+          },
+          {
+            name: 'Vs Code',
+            img_link: '../../../assets/images/skills/angular.png',
+          },
+          {
+            name: 'Vs Code',
+            img_link: '../../../assets/images/skills/docker.png',
+          },
+          {
+            name: 'Vs Code',
+            img_link: '../../../assets/images/skills/elastic.png',
+          },
+        ],
         image: '../../../assets/images/projects/todo-laptop.png',
         githubLink: 'https://github.com/sagar797/flask-todo',
         hostedLink: 'http://sagar-todo-app.herokuapp.com/',

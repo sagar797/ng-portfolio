@@ -36,6 +36,16 @@
         .tech-used {
           margin-top: 2vh;
 
+          .img {
+            height: 2rem;
+            margin: 0 1rem;
+          }
+
+          .img:hover {
+            transform: scale(1.4);
+            transition: 0.25s;
+          }
+
           .tech {
             display: inline-block;
             margin: 0 0.5vw;
@@ -48,9 +58,19 @@
       }
 
       .links {
-        margin-top: 2vh;
+        margin-top: 3vh;
         display: flex;
-        justify-content: center;
+
+        .hosted-link,
+        .github-link {
+          background-color: #902322 !important;
+        }
+
+        .hosted-link:hover,
+        .github-link:hover {
+          transform: scale(1.1);
+          transition: 0.5s;
+        }
 
         :hover {
           cursor: pointer;
