@@ -29,7 +29,7 @@
         .description {
           border: 1px solid;
           border-radius: 5px;
-          padding: 5%;
+          padding: 4%;
           background-color: #272727;
         }
 
@@ -48,8 +48,9 @@
       }
 
       .links {
-        display: flex;
         margin-top: 2vh;
+        display: flex;
+        justify-content: center;
 
         :hover {
           cursor: pointer;

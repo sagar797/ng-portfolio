@@ -7,7 +7,7 @@
         <img src={{project.image}} alt="{{project.name}}" class="col-md-12 voilet-color">
       </div>
       <div class="col-md-7 voilet-color details">
-        <h5 class="col-md-12 bold name">{{project.name}}</h5>
+        <h4 class="col-md-12 bold name text-center">{{project.name}}</h4>
         <h6 class="col-md-12 description">{{project.description}}</h6>
         <h6 class="col-md-12 tech-used">Tech Used:
           <!-- <button type="button" class="btn btn-outline-danger" *ngFor="let tech of project.tech_used">{{tech}}</button> -->
@@ -16,10 +16,10 @@
         </h6>
         <div class="col-md-12 links">
           <div class="col-md-1">
-            <i (click)="redirectToLink(project.githubLink)" class="fab fa-github fa-lg"></i>
+            <i (click)="redirectToLink(project.githubLink)" class="fab fa-github fa-2x"></i>
           </div>
           <div class="col-md-1">
-            <i (click)="redirectToLink(project.hostedLink)" class="fas fa-external-link-alt fa-lg"></i>
+            <i (click)="redirectToLink(project.hostedLink)" class="fas fa-external-link-alt fa-2x"></i>
           </div>
         </div>
       </div>
