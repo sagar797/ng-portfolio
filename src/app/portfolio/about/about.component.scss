@@ -15,9 +15,8 @@
     transform: translateY(-0.5rem);
   }
 
-  .opening-tag,
   .closing-tag {
-    margin-top: 2vh;
+    margin: 0 !important;
   }
 
   .body {
@@ -26,7 +25,12 @@
     .complete-body {
       animation: transitionIn 2.5s;
 
-      .about,
+      .about {
+        .heading {
+          margin-bottom: 2.5vh;
+        }
+      }
+
       .education {
         .heading {
           margin: 2.5vh 0;
@@ -139,8 +143,10 @@
     display: block !important;
   }
 
-  .heading {
-    margin: 2.5vh 0 !important;
+  .contact {
+    .heading {
+      margin: 2.5vh 0 !important;
+    }
   }
 
   .first-img,
@@ -155,8 +161,10 @@
     display: block !important;
   }
 
-  .heading {
-    margin: 2.5vh 0 !important;
+  .contact {
+    .heading {
+      margin: 2.5vh 0 !important;
+    }
   }
 
   .first-img,
@@ -171,8 +179,10 @@
     display: flex !important;
   }
 
-  .heading {
-    margin: 2.5vh 0 !important;
+  .contact {
+    .heading {
+      margin: 2.5vh 0 !important;
+    }
   }
 
   .first-img,
