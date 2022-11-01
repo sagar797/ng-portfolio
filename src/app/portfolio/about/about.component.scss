@@ -15,13 +15,18 @@
     transform: translateY(-0.5rem);
   }
 
+  .opening-tag,
+  .closing-tag {
+    margin-top: 2vh;
+  }
+
   .body {
-    margin-top: 3vh;
     display: flex;
 
-    .about {
+    .complete-body {
       animation: transitionIn 2.5s;
 
+      .about,
       .education {
         .heading {
           margin: 2.5vh 0;
@@ -39,6 +44,8 @@
       }
 
       .contact {
+        display: flex;
+
         .heading {
           margin: 2.5vh 0;
         }
@@ -47,6 +54,8 @@
         .img,
         .last-img {
           height: 2rem;
+          // margin-top: 2vh !important;
+          width: fit-content !important;
         }
 
         .first-img {
@@ -122,6 +131,54 @@
 
   .image-container:hover .image {
     opacity: 0.8;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .contact {
+    display: block !important;
+  }
+
+  .heading {
+    margin: 2.5vh 0 !important;
+  }
+
+  .first-img,
+  .img,
+  .last-img {
+    margin-bottom: 2vh !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact {
+    display: block !important;
+  }
+
+  .heading {
+    margin: 2.5vh 0 !important;
+  }
+
+  .first-img,
+  .img,
+  .last-img {
+    margin-bottom: 2vh !important;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .contact {
+    display: flex !important;
+  }
+
+  .heading {
+    margin: 2.5vh 0 !important;
+  }
+
+  .first-img,
+  .img,
+  .last-img {
+    margin-top: 2vh !important;
   }
 }
 
