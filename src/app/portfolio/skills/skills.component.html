@@ -1,36 +1,37 @@
-<div class="col-md-12 container">
-  <h4 class="col-md-12 heading voilet-color bold"><span class="red-color bold">02.</span> MY TOOLBOX & THINGS I CAN DO
+<div class="col-12 col-sm-12 col-md-12 col-xl-12 container">
+  <h4 class="col-12 col-sm-12 col-md-12 col-xl-12 heading voilet-color bold"><span class="red-color bold">02.</span> MY
+    TOOLBOX & THINGS I CAN DO
   </h4>
-  <div class="col-md-12 voilet-color body">
-    <h5 class="col-md-12 opening-tag red-color bold">&lt;skills&gt;</h5>
-    <h5 class="col-md-12 header">Tools and Technologies I've used to bring Code to Life:</h5>
-    <h5 class="col-md-12 frontend">Frontend:</h5>
-    <div class="col-md-2 skill" *ngFor="let skill of frontendSkills">
-      <h1 class="col-md-12">
+  <div class="col-12 col-sm-12 col-md-12 col-xl-12 voilet-color body">
+    <h5 class="col-12 col-sm-12 col-md-12 col-xl-12 opening-tag red-color bold">&lt;skills&gt;</h5>
+    <h5 class="col-12 col-sm-12 col-md-12 col-xl-12 header">Tools and Technologies I've used to bring Code to Life:</h5>
+    <h5 class="col-12 col-sm-12 col-md-12 col-xl-12 frontend">Frontend:</h5>
+    <div class="col-6 col-sm-6 col-md-3 col-xl-2 skill" *ngFor="let skill of frontendSkills">
+      <h1 class="col-12 col-sm-12 col-md-12 col-xl-12">
         <i *ngIf="!skill.image" [class]="skill.class" aria-hidden="true"></i>
         <span class="image"><img *ngIf="skill.image" [class]="skill.class" src="{{skill.path}}"
             alt="{{skill.name}}"></span>
       </h1>
-      <h5 class="col-md-12">{{skill.name}}</h5>
+      <h5 class="col-12 col-sm-12 col-md-12 col-xl-12">{{skill.name}}</h5>
     </div>
-    <h5 class="col-md-12 backend">Backend:</h5>
-    <div class="col-md-2 skill" *ngFor="let skill of backendSkills">
-      <h1 class="col-md-12">
+    <h5 class="col-12 col-sm-12 col-md-12 col-xl-12 backend">Backend:</h5>
+    <div class="col-6 col-sm-6 col-md-3 col-xl-2 skill" *ngFor="let skill of backendSkills">
+      <h1 class="col-12 col-sm-12 col-md-12 col-xl-12">
         <i *ngIf="!skill.image" [class]="skill.class" aria-hidden="true"></i>
         <span class="image"><img *ngIf="skill.image" [class]="skill.class" src="{{skill.path}}"
             alt="{{skill.name}}"></span>
       </h1>
-      <h5 class="col-md-12">{{skill.name}}</h5>
+      <h5 class="col-12 col-sm-12 col-md-12 col-xl-12">{{skill.name}}</h5>
     </div>
-    <h5 class="col-md-12 others">Others:</h5>
-    <div class="col-md-2 skill" *ngFor="let skill of otherSkills">
-      <h1 class="col-md-12">
+    <h5 class="col-12 col-sm-12 col-md-12 col-xl-12 others">Others:</h5>
+    <div class="col-6 col-sm-6 col-md-3 col-xl-2 skill" *ngFor="let skill of otherSkills">
+      <h1 class="col-12 col-sm-12 col-md-12 col-xl-12">
         <i *ngIf="!skill.image" [class]="skill.class" aria-hidden="true"></i>
         <span class="image"><img *ngIf="skill.image" [class]="skill.class" src="{{skill.path}}"
             alt="{{skill.name}}"></span>
       </h1>
-      <h5 class="col-md-12">{{skill.name}}</h5>
+      <h5 class="col-12 col-sm-12 col-md-12 col-xl-12">{{skill.name}}</h5>
     </div>
-    <h5 class="col-md-12 closing-tag red-color bold">&lt;/skills&gt;</h5>
+    <h5 class="col-12 col-sm-12 col-md-12 col-xl-12 closing-tag red-color bold">&lt;/skills&gt;</h5>
   </div>
 </div>
