@@ -5,6 +5,8 @@
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   display: flex;
+  flex-direction: row-reverse;
+
   .social-handles {
     margin-top: 5rem;
 
@@ -42,6 +44,61 @@
       background-color: #902322;
       transform: scale(1.25);
       transition: 0.25s;
+    }
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .profile {
+    display: block;
+
+    .photo {
+      display: none;
+    }
+
+    .introduction {
+      text-align: center;
+
+      h1 {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .profile {
+    display: flex;
+
+    .photo {
+      display: block;
+    }
+
+    .introduction {
+      text-align: left;
+      // margin-right: -15vw;
+
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .profile {
+    display: flex;
+
+    .photo {
+      display: block;
+    }
+
+    .introduction {
+      text-align: left;
+
+      h1 {
+        font-size: 2.5rem;
+      }
     }
   }
 }
