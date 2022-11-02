@@ -17,11 +17,13 @@ import { SOCIAL_HANDLE_LINKS } from '../../constants/app.constants';
 export class HomeComponent implements OnInit {
   id = 'tsparticles';
   particlesOptions = {};
+  mySummaryData: Array<String> = [];
 
   constructor() {}
 
   ngOnInit(): void {
     this.getParticlesOptions();
+    this.getMySummaryData();
   }
 
   getParticlesOptions() {
@@ -104,6 +106,15 @@ export class HomeComponent implements OnInit {
 
   async particlesInit(engine: Engine): Promise<void> {
     await loadFull(engine);
+  }
+
+  getMySummaryData() {
+    this.mySummaryData = [
+      'Full-Stack Developer.',
+      'Problem Solver.',
+      'Gamer.',
+      'Cinephile.',
+    ];
   }
 
   redirectToSocialLink(socialHandle: string) {

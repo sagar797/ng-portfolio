@@ -1,4 +1,4 @@
-export const SOCIAL_HANDLE_LINKS: any = {
+export const SOCIAL_HANDLE_LINKS: Object = {
   linkedin: 'https://www.linkedin.com/in/sagar797/',
   leetcode: 'https://leetcode.com/sagar797/',
   github: 'https://github.com/sagar797',
@@ -9,7 +9,7 @@ export const SOCIAL_HANDLE_LINKS: any = {
   medium: 'https://medium.com/@sagarrr',
 };
 
-export const importantLinksNotRelatedToDevButUsedInThisProject: any = {
+export const importantLinksNotRelatedToDevButUsedInThisProject: Object = {
   laptopImageOverlayMaker: 'https://overlay.imageonline.co/',
   removeBackground: 'https://www.remove.bg/',
   mdbBootstrapIconsLink:
