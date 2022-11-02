@@ -1,2 +1,22 @@
-<app-navbar></app-navbar>
-<router-outlet></router-outlet>
+<!-- <div class="loader" *ngIf="isLoading">
+  <div class="lds-roller">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <h1>Loading in {{loadingTime/1000}}</h1>
+</div> -->
+<div class="loader" *ngIf="isLoading">
+  <h2 class="header">Loading in {{loadingTime/1000}}</h2>
+  <img src="../../../assets/gifs/gif_loader.gif" alt="gif">
+</div>
+
+<div *ngIf="!isLoading">
+  <app-navbar></app-navbar>
+  <router-outlet></router-outlet>
+</div>
