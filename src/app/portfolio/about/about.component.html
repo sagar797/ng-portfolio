@@ -1,52 +1,50 @@
 <div class="col-12 col-sm-12 col-md-12 col-xl-12 container">
   <h5 class="col-12 col-sm-12 col-md-12 col-xl-12 opening-tag red-color bold">&lt;about&gt;</h5>
-  <div class="col-12 col-sm-12 col-md-12 col-xl-12 voilet-color body">
-    <div class="col-12 col-sm-12 col-md-6 col-xl-7 complete-body">
+  <div class="col-12 col-sm-12 col-md-12 col-xl-7 voilet-color body">
+    <div class="col-12 col-sm-12 col-md-6 col-xl-12 complete-body">
       <div class="col-12 col-sm-12 col-md-12 col-xl-12 about">
         <h4 class="col-12 col-sm-12 col-md-12 col-xl-12 heading bold voilet-color">ABOUT ME</h4>
-        <h4 class="col-12 col-sm-12 col-md-12 col-xl-12">Hi, I'm Sagar.</h4>
-        <p class="col-12 col-sm-12 col-md-12 col-xl-12">
-          I'm a Full Stack Developer, Gamer and Cinephile.
-        </p>
-        <p class="col-12 col-sm-12 col-md-12 col-xl-12">
-          I have done B.TECH in Electronics & Communication Engineering (ECE) from BPIT (IP University) Delhi 🇮🇳
-          I'm most passionate about giving back to the community, and my goal is to pursue this passion within the field
-          of software engineering. In my free time, I like solving problems and working on projects.
-        </p>
-        <p class="col-12 col-sm-12 col-md-12 col-xl-12">
-          I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that
-          matches my skills and experience then don't hesitate to contact me.
-        </p>
+        <h5 class="col-12 col-sm-12 col-md-12 col-xl-12">
+          Hello! My name is Sagar. I'm a developer who enjoy creating things that lives on the internet and become
+          legacy.
+        </h5>
+        <br>
+        <h5 class="col-12 col-sm-12 col-md-12 col-xl-12">
+          I am a Full-Stack Developer who loves to Solve Real Life Problems using Code 👨🏻‍💻. I like Working on
+          Projects 💻, Reading Books 📚 and Games 🎮.
+        </h5>
+        <br>
+        <h5 class="col-12 col-sm-12 col-md-12 col-xl-12">
+          I am open to Job opportunities where I can contribute, Learn and Grow. If you have a good
+          opportunity that matches my
+          <a class="red-color" href="/home/skills">skills</a> and
+          <a class="red-color" href="/home/experience">experience</a>
+          then don't hesitate to contact me at -
+          <span class="email" (click)="openEmailLink()">
+            <img src="../../../assets/images/email_icon.png" class="email_icon" alt="email_icon">
+            <span class="email_id">gupta.sagar797@gmail.com</span>
+          </span>
+        </h5>
       </div>
 
       <div class="col-12 col-sm-12 col-md-12 col-xl-12 education">
         <h4 class="col-12 col-sm-12 col-md-12 col-xl-12 heading bold">EDUCATION</h4>
-        <div class="col-12 col-sm-12 col-md-12 col-xl-12 bpit">
-          <h4 class="col-12 col-sm-12 col-md-12 col-xl-12">Bhagwan Parshuram Institute Of Technology</h4>
-          <p class="col-12 col-sm-12 col-md-12 col-xl-12">B.Tech, Electronics & Communication Engineering</p>
+        <div class="col-12 col-sm-12 col-md-12 col-xl-12" [ngClass]="education.css_class"
+          *ngFor="let education of educationData">
+          <h5 class="col-12 col-sm-12 col-md-12 col-xl-12 bold">{{education.name}}</h5>
+          <p class="col-12 col-sm-12 col-md-12 col-xl-12">{{education.standard}}</p>
           <p class="col-12 col-sm-12 col-md-12 col-xl-12">
-            <i class="far fa-calendar"></i> 2017 - 2021, CGPA: 8.1/10
-          </p>
-        </div>
-        <div class="col-12 col-sm-12 col-md-12 col-xl-12 twelfth">
-          <h4 class="col-12 col-sm-12 col-md-12 col-xl-12">Greenfields Public School</h4>
-          <p class="col-12 col-sm-12 col-md-12 col-xl-12">CBSE Class XII (PCM)</p>
-          <p class="col-12 col-sm-12 col-md-12 col-xl-12">
-            <i class="far fa-calendar"></i> 2016 - 2017, Precentage: 89%
+            <i class="far fa-calendar"></i> {{education.timeline.from}} - {{education.timeline.to}},
+            {{education.score.name}}: {{education.score.value}}
+            <span *ngIf="education.score.total">/{{education.score.total}}</span>
           </p>
         </div>
       </div>
 
-      <div class="col-12 col-sm-12 col-md-12 col-xl-12 contact">
-        <h4 class="col-12 col-sm-12 col-md-12 col-xl-8 heading bold">CONNECT WITH ME</h4>
-        <img (click)="redirectToSocialLink('instagram')" src="../../../assets/images/social-media/instagram.png"
-          class="col-2 col-sm-2 col-md-1 col-xl-1 first-img" alt="instagram">
-        <img (click)="redirectToSocialLink('twitter')" src="../../../assets/images/social-media/twitter.png"
-          class="col-2 col-sm-2 col-md-1 col-xl-1 img" alt="twitter">
-        <img (click)="redirectToSocialLink('linkedin')" src="../../../assets/images/social-media/linkedin.png"
-          class="col-2 col-sm-2 col-md-1 col-xl-1 img" alt="linkedin">
-        <img (click)="redirectToSocialLink('medium')" src="../../../assets/images/social-media/medium.png"
-          class="col-2 col-sm-2 col-md-1 col-xl-1 last-img" alt="medium">
+      <div class="col-12 col-sm-12 col-md-12 col-xl-12 col-xxl-12 contact">
+        <h4 class="col-12 col-sm-12 col-md-12 col-xl-8 col-xxl-9 heading bold">CONNECT WITH ME</h4>
+        <img *ngFor="let contact of contactData" class="col-2 col-sm-2 col-md-1 col-xl-1 col-xxl-1 img"
+          (click)="redirectToSocialLink(contact.name)" src="{{contact.image_path}}" alt="{{contact.name}}">
       </div>
     </div>
 
@@ -58,7 +56,7 @@
   <h5 class="col-12 col-sm-12 col-md-12 col-xl-12 closing-tag red-color bold">&lt;/about&gt;</h5>
 </div>
 
-<div class="col-12 col-sm-12 col-md-12 col-xl-12 orbit">
+<div class="col-11 col-sm-11 col-md-11 col-xl-11 orbit">
   <ul class="orbit-wrap">
     <li class="orbit-center">
       <i class="orbit-center__icon fa fa-code"></i>

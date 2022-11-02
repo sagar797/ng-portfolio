@@ -29,6 +29,23 @@
         .heading {
           margin-bottom: 2.5vh;
         }
+
+        .email {
+          .email_id {
+            color: #cf1c1a;
+            text-decoration: underline;
+          }
+
+          .email_icon {
+            height: 1.5rem;
+            margin-right: 0.5rem;
+            width: fit-content !important;
+          }
+
+          :hover {
+            cursor: pointer;
+          }
+        }
       }
 
       .education {
@@ -58,18 +75,7 @@
         .img,
         .last-img {
           height: 2rem;
-          // margin-top: 2vh !important;
           width: fit-content !important;
-        }
-
-        .first-img {
-          margin-right: 0.8rem;
-        }
-
-        .first-img:hover {
-          cursor: pointer;
-          transform: scale(1.5);
-          transition: 0.25s;
         }
 
         .img {
@@ -77,16 +83,6 @@
         }
 
         .img:hover {
-          cursor: pointer;
-          transform: scale(1.5);
-          transition: 0.25s;
-        }
-
-        .last-img {
-          margin-left: 0.8rem;
-        }
-
-        .last-img:hover {
           cursor: pointer;
           transform: scale(1.5);
           transition: 0.25s;
@@ -220,6 +216,7 @@ html {
 
 .orbit {
   position: absolute;
+  z-index: -1;
   top: 15%;
   left: 5%;
 
