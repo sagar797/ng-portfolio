@@ -19,8 +19,6 @@
     margin-top: 3vh;
 
     .project {
-      display: flex;
-
       .details {
         .name {
           margin-top: 5vh;
@@ -86,7 +84,9 @@
 
 @media screen and (min-width: 320px) {
   .project {
-    display: block !important;
+    display: block;
+    border-bottom: 2px double white;
+    padding-bottom: 1.5rem;
 
     h6 {
       font-size: 0.8rem;
@@ -105,9 +105,10 @@
 
 @media screen and (min-width: 768px) {
   .project {
-    display: flex !important;
+    display: flex;
+    border-bottom: 0;
 
-    h6 {
+    padding-bottom: 0 h6 {
       font-size: 0.9rem;
     }
 
@@ -124,7 +125,7 @@
 
 @media screen and (min-width: 1024px) {
   .project {
-    display: flex !important;
+    display: flex;
 
     h6 {
       font-size: 1rem;
@@ -143,7 +144,7 @@
 
 @media screen and (min-width: 1440px) {
   .project {
-    display: flex !important;
+    display: flex;
 
     h6 {
       font-size: 1rem;

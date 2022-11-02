@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./projects.component.scss'],
 })
 export class ProjectsComponent implements OnInit {
-  projects = [];
+  allProjects = [];
 
   constructor() {}
 
@@ -15,7 +15,7 @@ export class ProjectsComponent implements OnInit {
   }
 
   getProjectList() {
-    this.projects = [
+    this.allProjects = [
       {
         name: 'Master TODO List',
         description:
