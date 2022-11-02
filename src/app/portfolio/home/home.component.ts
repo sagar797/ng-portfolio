@@ -112,8 +112,8 @@ export class HomeComponent implements OnInit {
     this.mySummaryData = [
       'Full-Stack Developer.',
       'Problem Solver.',
-      'Gamer.',
-      'Cinephile.',
+      'Gaming Enthusiast.',
+      // 'Cinephile.',
     ];
   }
 
