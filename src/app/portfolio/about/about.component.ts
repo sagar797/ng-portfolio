@@ -9,12 +9,14 @@ import { SOCIAL_HANDLE_LINKS } from 'src/app/constants/app.constants';
 export class AboutComponent implements OnInit {
   educationData = [];
   contactData = [];
+  orbitData = [];
 
   constructor() {}
 
   ngOnInit(): void {
     this.getEducationData();
     this.getContactData();
+    this.getOrbitData();
   }
 
   redirectToSocialLink(socialHandle: string) {
@@ -75,6 +77,119 @@ export class AboutComponent implements OnInit {
       {
         name: 'medium',
         image_path: '../../../assets/images/social-media/medium.png',
+      },
+    ];
+  }
+
+  getOrbitData() {
+    this.orbitData = [
+      {
+        ring_class: 'ring-0',
+        icon_data: [
+          {
+            name: 'angular',
+            image_path: '../../../assets/images/skills/angular.png',
+          },
+          {
+            name: 'aws',
+            image_path: '../../../assets/images/skills/aws.png',
+          },
+          {
+            name: 'bootstrap',
+            image_path: '../../../assets/images/skills/bootstrap.png',
+          },
+          {
+            name: 'commandline',
+            image_path: '../../../assets/images/skills/commandline.png',
+          },
+          {
+            name: 'typescript',
+            image_path: '../../../assets/images/skills/typescript.png',
+          },
+        ],
+      },
+      {
+        ring_class: 'ring-1',
+        icon_data: [
+          {
+            name: 'css',
+            image_path: '../../../assets/images/skills/css.png',
+          },
+          {
+            name: 'docker',
+            image_path: '../../../assets/images/skills/docker.png',
+          },
+          {
+            name: 'dynamo',
+            image_path: '../../../assets/images/skills/dynamo.png',
+          },
+          {
+            name: 's3',
+            image_path: '../../../assets/images/skills/s3.png',
+          },
+          {
+            name: 'sass',
+            image_path: '../../../assets/images/skills/sass.png',
+          },
+        ],
+      },
+      {
+        ring_class: 'ring-2',
+        icon_data: [
+          {
+            name: 'elastic',
+            image_path: '../../../assets/images/skills/elastic.png',
+          },
+          {
+            name: 'flask',
+            image_path: '../../../assets/images/skills/flask.png',
+          },
+          {
+            name: 'git',
+            image_path: '../../../assets/images/skills/git.png',
+          },
+          {
+            name: 'commandline',
+            image_path: '../../../assets/images/skills/commandline.png',
+          },
+          {
+            name: 'github',
+            image_path: '../../../assets/images/skills/github.png',
+          },
+          {
+            name: 'html',
+            image_path: '../../../assets/images/skills/html.png',
+          },
+          {
+            name: 'java',
+            image_path: '../../../assets/images/skills/java.png',
+          },
+          {
+            name: 'javascript',
+            image_path: '../../../assets/images/skills/javascript.png',
+          },
+        ],
+      },
+      {
+        ring_class: 'ring-3',
+        icon_data: [
+          {
+            name: 'lambda',
+            image_path: '../../../assets/images/skills/lambda.png',
+          },
+          {
+            name: 'python',
+            image_path: '../../../assets/images/skills/python.png',
+          },
+          {
+            name: 'redis',
+            image_path: '../../../assets/images/skills/redis.png',
+          },
+          {
+            name: 'vscode',
+            image_path: '../../../assets/images/skills/vscode.png',
+          },
+        ],
       },
     ];
   }
