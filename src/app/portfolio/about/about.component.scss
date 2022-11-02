@@ -21,6 +21,7 @@
 
   .body {
     display: flex;
+    display: inline-block;
 
     .complete-body {
       animation: transitionIn 2.5s;
